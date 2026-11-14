@@ -1,0 +1,6 @@
+{
+  "format": "g5510-owned-SMD-copier-metadata-v1",
+  "header_size_BYTES": 512,
+  "leading_metadata_BYTEs": [64, 3, 0, 0, 0, 0, 0, 0, 170, 187, 6, 0, 0, 0, 0, 0],
+  "preserved_tail": {"count_BYTES": 496, "value_BYTE": 0}
+}

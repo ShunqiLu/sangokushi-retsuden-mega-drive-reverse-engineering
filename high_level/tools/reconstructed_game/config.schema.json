@@ -1,0 +1,279 @@
+{
+  "$id": "urn:g5510:reconstructed-game-config:v1-v2",
+  "title": "Explicit reconstructed-game construction and finite event inputs",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["format", "project_root", "sound_native_root", "sources", "audio_root", "chip_library", "inputs", "output", "save", "frontend", "pcm_output"],
+  "properties": {
+    "format": {"enum": ["g5510-reconstructed-game-config-v1", "g5510-reconstructed-game-config-v2"]},
+    "project_root": {"$ref": "#/$defs/path"},
+    "m68k_native_root": {"$ref": "#/$defs/path"},
+    "sound_native_root": {"$ref": "#/$defs/path"},
+    "sources": {"$ref": "#/$defs/path"},
+    "audio_root": {"$ref": "#/$defs/path"},
+    "chip_library": {"$ref": "#/$defs/path"},
+    "inputs": {"$ref": "#/$defs/path"},
+    "output": {"$ref": "#/$defs/path"},
+    "save": {
+      "oneOf": [
+        {"type": "object", "additionalProperties": false,
+         "required": ["path", "readable", "writable"],
+         "properties": {"path": {"$ref": "#/$defs/path"},
+           "readable": {"type": "boolean"}, "writable": {"type": "boolean"}}},
+        {"type": "object", "additionalProperties": false,
+         "required": ["initial_byte", "readable", "writable"],
+         "properties": {"initial_byte": {"type": "integer", "minimum": 0, "maximum": 255},
+           "readable": {"type": "boolean"}, "writable": {"type": "boolean"}}}
+      ]
+    },
+    "pcm_output": {
+      "oneOf": [
+        {"type": "object", "additionalProperties": false, "required": ["mode"], "properties": {"mode": {"const": "discard"}}},
+        {
+          "type": "object", "additionalProperties": false,
+          "required": ["mode", "fm_path", "psg_path", "fm_sample_rate_hz", "psg_sample_rate_hz", "max_fm_frames", "max_psg_frames"],
+          "properties": {
+            "mode": {"const": "wav"},
+            "fm_path": {"$ref": "#/$defs/path"}, "psg_path": {"$ref": "#/$defs/path"},
+            "fm_sample_rate_hz": {"type": "integer", "minimum": 1},
+            "psg_sample_rate_hz": {"type": "integer", "minimum": 1},
+            "max_fm_frames": {"type": "integer", "minimum": 1},
+            "max_psg_frames": {"type": "integer", "minimum": 1}
+          }
+        },
+        {
+          "type": "object", "additionalProperties": false,
+          "required": ["mode", "fm_sample_rate_hz", "psg_sample_rate_hz", "max_fm_frames", "max_psg_frames", "device_id", "max_queued_ms"],
+          "properties": {
+            "mode": {"const": "speakers"},
+            "fm_sample_rate_hz": {"type": "integer", "minimum": 1, "maximum": 1000000},
+            "psg_sample_rate_hz": {"type": "integer", "minimum": 1, "maximum": 1000000},
+            "max_fm_frames": {"type": "integer", "minimum": 1},
+            "max_psg_frames": {"type": "integer", "minimum": 1},
+            "device_id": {"type": "integer", "minimum": -1, "maximum": 4294967294},
+            "max_queued_ms": {"type": "integer", "minimum": 1, "maximum": 10000}
+          }
+        }
+      ]
+    },
+    "frontend": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "scale",
+        "timer_interval_ms",
+        "keymap",
+        "diagnostics_directory"
+      ],
+      "properties": {
+        "scale": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 8
+        },
+        "timer_interval_ms": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "diagnostics_directory": {
+          "$ref": "#/$defs/path"
+        },
+        "keymap": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/key"
+          }
+        },
+        "events": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/event"
+          }
+        },
+        "frame_plan": {
+          "$ref": "#/$defs/frame_plan"
+        }
+      },
+      "oneOf": [
+        {
+          "required": [
+            "events"
+          ],
+          "not": {
+            "required": [
+              "frame_plan"
+            ]
+          }
+        },
+        {
+          "required": [
+            "frame_plan"
+          ],
+          "not": {
+            "required": [
+              "events"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "allOf": [{
+    "if": {"properties": {"format": {"const": "g5510-reconstructed-game-config-v2"}}},
+    "then": {"required": ["m68k_native_root"]},
+    "else": {"not": {"required": ["m68k_native_root"]}}
+  }],
+  "$defs": {
+    "frame_plan": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "max_frames",
+        "max_device_steps_per_frame",
+        "irq_level",
+        "video",
+        "pad_changes",
+        "live_pad_ports",
+        "audio"
+      ],
+      "properties": {
+        "max_frames": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "max_device_steps_per_frame": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "irq_level": {
+          "enum": [
+            4,
+            6
+          ]
+        },
+        "video": {
+          "$ref": "#/$defs/video"
+        },
+        "pad_changes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/pad"
+          }
+        },
+        "live_pad_ports": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/port"
+          }
+        },
+        "audio": {
+          "$ref": "#/$defs/frame_audio"
+        }
+      }
+    },
+    "frame_audio": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "fm_ticks",
+        "psg_input_clocks",
+        "max_software_steps",
+        "im1"
+      ],
+      "properties": {
+        "fm_ticks": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "psg_input_clocks": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "max_software_steps": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "im1": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/frame_im1"
+            }
+          ]
+        }
+      }
+    },
+    "frame_im1": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "clock_hz",
+        "first_timestamp",
+        "timestamp_step"
+      ],
+      "properties": {
+        "clock_hz": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "first_timestamp": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "timestamp_step": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "path": {"type": "string", "minLength": 1},
+    "port": {"type": "integer", "minimum": 0, "maximum": 2},
+    "button": {"enum": ["up", "down", "left", "right", "a", "b", "c", "start"]},
+    "key": {
+      "type": "object", "additionalProperties": false, "required": ["key", "port", "button"],
+      "properties": {"key": {"type": "string", "minLength": 1}, "port": {"$ref": "#/$defs/port"}, "button": {"$ref": "#/$defs/button"}}
+    },
+    "pad": {
+      "type": "object", "additionalProperties": false, "required": ["port", "buttons"],
+      "properties": {"port": {"$ref": "#/$defs/port"}, "buttons": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/button"}}}
+    },
+    "video": {
+      "type": "object", "additionalProperties": false, "required": ["status_without_dma", "hv", "open_bus"],
+      "properties": {
+        "status_without_dma": {"type": "integer", "minimum": 0, "maximum": 65535},
+        "hv": {"type": ["integer", "null"], "minimum": 0, "maximum": 65535},
+        "open_bus": {"type": ["integer", "null"], "minimum": 0, "maximum": 65535}
+      }
+    },
+    "event": {
+      "oneOf": [
+        {
+          "type": "object", "additionalProperties": false,
+          "required": ["kind", "level", "video", "pad_changes", "live_pad_ports"],
+          "properties": {
+            "kind": {"const": "irq"}, "level": {"enum": [4, 6]}, "video": {"$ref": "#/$defs/video"},
+            "pad_changes": {"type": "array", "items": {"$ref": "#/$defs/pad"}},
+            "live_pad_ports": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/port"}}
+          }
+        },
+        {
+          "type": "object", "additionalProperties": false, "required": ["kind", "event"],
+          "properties": {"kind": {"const": "device"}, "event": {"enum": ["vblank-end", "vblank-start", "sound-bus-acquire"]}}
+        },
+        {"type": "object", "additionalProperties": false, "required": ["kind"], "properties": {"kind": {"const": "audio_advance"}}},
+        {
+          "type": "object", "additionalProperties": false, "required": ["kind", "timestamp", "clock_hz"],
+          "properties": {"kind": {"const": "audio_im1"}, "timestamp": {"type": "integer", "minimum": 0}, "clock_hz": {"type": "integer", "minimum": 1}}
+        },
+        {
+          "type": "object", "additionalProperties": false, "required": ["kind", "clocks"],
+          "properties": {"kind": {"enum": ["fm_clocks", "psg_clocks"]}, "clocks": {"type": "integer", "minimum": 1}}
+        }
+      ]
+    }
+  }
+}

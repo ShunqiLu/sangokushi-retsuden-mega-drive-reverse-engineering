@@ -1,0 +1,41 @@
+{
+  "format": "g5510-source-external-dependencies-v1",
+  "stdlib": [
+    "argparse",
+    "ast",
+    "binascii",
+    "bisect",
+    "collections",
+    "concurrent",
+    "copy",
+    "csv",
+    "dataclasses",
+    "functools",
+    "hashlib",
+    "heapq",
+    "io",
+    "itertools",
+    "json",
+    "math",
+    "os",
+    "pathlib",
+    "re",
+    "shutil",
+    "stat",
+    "struct",
+    "subprocess",
+    "sys",
+    "tempfile",
+    "time",
+    "typing",
+    "zlib"
+  ],
+  "third_party": [
+    "PIL",
+    "capstone"
+  ],
+  "installed_or_downloaded": false,
+  "GNU_build_tools_copied": false,
+  "native_chip_library_copied": false,
+  "note": "Install Python and the listed Python packages, then provide local GNU cross-tool directories for the build."
+}

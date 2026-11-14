@@ -1,0 +1,47 @@
+{
+  "format": "g5510-reconstructed-game-config-v1",
+  "project_root": "../..",
+  "sound_native_root": "../../local-inputs/sound",
+  "sources": "../../local-inputs/scene-sources.json",
+  "audio_root": "../../local-inputs/resources",
+  "chip_library": "../../local-inputs/g5510_ymfm.dll",
+  "inputs": "../../local-inputs/hardware-inputs.json",
+  "output": "../../build/desktop",
+  "save": {
+    "path": "../../local-inputs/campaign.srm",
+    "readable": true,
+    "writable": true
+  },
+  "pcm_output": {
+    "mode": "discard"
+  },
+  "frontend": {
+    "scale": 2,
+    "timer_interval_ms": 20,
+    "diagnostics_directory": "../../build/desktop/diagnostics",
+    "keymap": [
+      {"key": "Up", "port": 0, "button": "up"},
+      {"key": "Down", "port": 0, "button": "down"},
+      {"key": "Left", "port": 0, "button": "left"},
+      {"key": "Right", "port": 0, "button": "right"},
+      {"key": "z", "port": 0, "button": "a"},
+      {"key": "x", "port": 0, "button": "b"},
+      {"key": "c", "port": 0, "button": "c"},
+      {"key": "Return", "port": 0, "button": "start"}
+    ],
+    "events": [
+      {
+        "kind": "irq",
+        "level": 6,
+        "video": {"status_without_dma": 8, "hv": null, "open_bus": null},
+        "pad_changes": [],
+        "live_pad_ports": [0]
+      },
+      {"kind": "audio_advance"},
+      {"kind": "audio_im1", "timestamp": 1, "clock_hz": 60},
+      {"kind": "fm_clocks", "clocks": 32},
+      {"kind": "psg_clocks", "clocks": 32},
+      {"kind": "device", "event": "vblank-end"}
+    ]
+  }
+}

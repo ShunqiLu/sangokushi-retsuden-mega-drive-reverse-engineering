@@ -1,0 +1,17 @@
+{
+  "format": "g5510-entry-capture-config-v3",
+  "batch": "../../../build/concentrated-input-batch-REPLACE.json",
+  "output": "../../../build/entry-capture-pre-call-REPLACE",
+  "tool_id": 4,
+  "max_cases": 256,
+  "max_captures_per_entry": 1,
+  "max_total_bytes": 33554432,
+  "max_case_json_bytes": 65536,
+  "min_free_bytes": 1073741824,
+  "audio": {
+    "max_DATA_operations": 1000000
+  },
+  "pre_call": {
+    "enabled": true
+  }
+}

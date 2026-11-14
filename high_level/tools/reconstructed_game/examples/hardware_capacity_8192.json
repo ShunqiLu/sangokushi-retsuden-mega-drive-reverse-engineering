@@ -1,0 +1,17 @@
+{
+  "format": "g5510-finite-application-hardware-capacities-v1",
+  "max_frames": 8192,
+  "refresh_observations": 65536,
+  "refresh_value_start": 3,
+  "refresh_value_step": 17,
+  "future_bus_permits": 65536,
+  "future_dma_slots": 131072,
+  "future_dma_units_per_slot": 65536,
+  "video_edge_pairs": 1024,
+  "scene_max_reads": 128000000,
+  "audio_max_data_operations": 32000000,
+  "driver_progressive_permits": 65536,
+  "fm_busy_permits": 2097152,
+  "max_materialized_items": 300000,
+  "max_output_bytes": 4000000
+}

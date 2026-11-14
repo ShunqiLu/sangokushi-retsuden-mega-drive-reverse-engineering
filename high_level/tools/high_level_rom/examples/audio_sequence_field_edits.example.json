@@ -1,0 +1,17 @@
+{
+  "format": "g5510-audio-sequence-field-edits-v1",
+  "edits": [
+    {
+      "view_id": "82d2:ordinary:0:0",
+      "field": "attenuation_byte",
+      "expected": 8,
+      "value": 9
+    },
+    {
+      "view_id": "83bf:ordinary:0:0",
+      "field": "note",
+      "expected": 146,
+      "value": 147
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0",
+  "word_offset_table_boundaries": [
+    {
+      "source": "0x00BBF0",
+      "table_start": "0x00BBF6",
+      "end_exclusive": "0x00BC00",
+      "dispatch_base": "0x00BC24",
+      "reason": "five signed word offsets are followed by a LEA-based routine at 0x00BC00; the same five-entry table is repeated at 0x00BC1C"
+    },
+    {
+      "source": "0x00E068",
+      "table_start": "0x00E0C4",
+      "end_exclusive": "0x00E0D0",
+      "dispatch_base": "0x00FE06",
+      "reason": "six non-padding signed word offsets correspond to the local compare against state value 6, whose equal case bypasses the dispatch"
+    },
+    {
+      "source": "0x017BA8",
+      "table_start": "0x017BB2",
+      "end_exclusive": "0x017BB6",
+      "dispatch_base": "0x017BF0",
+      "reason": "two signed word offsets are immediately followed by code at 0x017BB6; both targets begin valid routines and the source index is loaded from the two-state f6d4 field"
+    },
+    {
+      "source": "0x01D9A6",
+      "table_start": "0x01D9AC",
+      "end_exclusive": "0x01D9B6",
+      "dispatch_base": "0x01D9BE",
+      "reason": "five signed word offsets are followed by ffff-terminated data at 0x01D9B6; all five resolve to aligned local routine entries"
+    },
+    {
+      "source": "0x01AF8A",
+      "table_start": "0x01AFA0",
+      "end_exclusive": "0x01AFAC",
+      "dispatch_base": "0x01AFBC",
+      "reason": "six signed word offsets end where the separately referenced absolute pointer table at 0x01AFAC begins; all six resolve to aligned local routine entries"
+    }
+  ],
+  "bra_w_table_sources": [
+    {
+      "source": "0x0058F8",
+      "base_hint": "0x0058FE",
+      "first_slot_offset": 0,
+      "entry_count": 3,
+      "reason": "three consecutive aligned BRA.W trampolines occupy 0x0058FE-0x00590A and are immediately followed by JMP.L code; D7 is supplied by the caller"
+    }
+  ]
+}

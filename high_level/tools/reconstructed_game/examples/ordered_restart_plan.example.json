@@ -1,0 +1,23 @@
+{
+  "format": "g5510-original-ordered-restart-plans-v1",
+  "plans": [
+    {
+      "kind": "intro",
+      "reset_pulse_clocks": [4, 4],
+      "irq_clock_hz": 1000,
+      "startup_im1_offsets": [1, 2, 3]
+    },
+    {
+      "kind": "narrative",
+      "reset_pulse_clocks": [4, 4],
+      "irq_clock_hz": 1000,
+      "startup_im1_offsets": [1, 2, 3]
+    },
+    {
+      "kind": "intro",
+      "reset_pulse_clocks": [4, 4],
+      "irq_clock_hz": 1000,
+      "startup_im1_offsets": [1, 2, 3]
+    }
+  ]
+}

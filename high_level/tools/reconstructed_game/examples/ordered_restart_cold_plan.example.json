@@ -1,0 +1,26 @@
+{
+  "format": "g5510-original-ordered-restart-plans-v2",
+  "plans": [
+    {
+      "kind": "intro",
+      "reset_path": "cold",
+      "reset_pulse_clocks": [4, 4, 4],
+      "irq_clock_hz": 1000,
+      "startup_im1_offsets": [1, 2, 3]
+    },
+    {
+      "kind": "narrative",
+      "reset_path": "warm",
+      "reset_pulse_clocks": [4, 4],
+      "irq_clock_hz": 1000,
+      "startup_im1_offsets": [1, 2, 3]
+    },
+    {
+      "kind": "intro",
+      "reset_path": "cold",
+      "reset_pulse_clocks": [4, 4, 4],
+      "irq_clock_hz": 1000,
+      "startup_im1_offsets": [1, 2, 3]
+    }
+  ]
+}

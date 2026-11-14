@@ -1,0 +1,87 @@
+{
+  "$id": "urn:g5510:physical-input-timeline:v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "format",
+    "ports",
+    "initial",
+    "changes"
+  ],
+  "properties": {
+    "format": {
+      "const": "g5510-physical-input-timeline-v1"
+    },
+    "ports": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 2
+      }
+    },
+    "initial": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/pad"
+      }
+    },
+    "changes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "frame",
+          "snapshots"
+        ],
+        "properties": {
+          "frame": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "snapshots": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/pad"
+            }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "pad": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "port",
+        "buttons"
+      ],
+      "properties": {
+        "port": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "buttons": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "up",
+              "down",
+              "left",
+              "right",
+              "a",
+              "b",
+              "c",
+              "start"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
