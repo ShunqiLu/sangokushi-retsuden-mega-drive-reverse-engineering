@@ -1,5 +1,7 @@
 # 可选入口采集
 
+**简体中文** · [繁體中文](README_ENTRY_CAPTURE.zh-TW.md) · [日本語](README_ENTRY_CAPTURE.ja.md) · [English](README_ENTRY_CAPTURE.en.md)
+
 `--capture-entries` 启用同一桌面会话中的源入口采集。采集配置与游戏配置分开。入口数据来自真实调用帧、物理返回槽、存储区与调用上下文；采集器以显式的文件数和空间容量保存记录。
 
 ```powershell

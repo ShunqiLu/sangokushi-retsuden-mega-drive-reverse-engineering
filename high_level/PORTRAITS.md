@@ -1,5 +1,7 @@
 # 人物头像
 
+**简体中文** · [繁體中文](PORTRAITS.zh-TW.md) · [日本語](PORTRAITS.ja.md) · [English](PORTRAITS.en.md)
+
 素材包中的 `OFFICER_PORTRAITS.json` 提供派生查找索引。在 `officers` 中按 `name.text` 或 `officer_record_id` 查找；未知字形保留精确转义。
 
 | 字段 | 用途 |

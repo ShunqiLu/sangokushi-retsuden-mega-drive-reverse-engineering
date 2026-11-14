@@ -1,5 +1,7 @@
 # YMFM 音频桥
 
+**简体中文** · [繁體中文](README_YMFM.zh-TW.md) · [日本語](README_YMFM.ja.md) · [English](README_YMFM.en.md)
+
 [`YmfmDevice`](ymfm_device.py) 实现 `FmPortDevice`。游戏的 Python 音频驱动负责乐谱、音色、状态和寄存器操作；外置 [YMFM](https://github.com/aaronsgiles/ymfm) 源码提供 YM2612 计算，PSG 使用单独设备。
 
 ## 构建

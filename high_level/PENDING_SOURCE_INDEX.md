@@ -1,5 +1,7 @@
 # 原地址到高级语言源码
 
+**简体中文** · [繁體中文](PENDING_SOURCE_INDEX.zh-TW.md) · [日本語](PENDING_SOURCE_INDEX.ja.md) · [English](PENDING_SOURCE_INDEX.en.md)
+
 地址采用线性 BIN 的十六进制偏移。表中列出原代码段的起点与长度、各调用入口和对应的 Python 函数。
 
 | 原整段 / 字节 | 入口 | 本版源码 |

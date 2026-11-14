@@ -1,5 +1,7 @@
 # 有限硬件输入与音频步进
 
+**简体中文** · [繁體中文](README_HARDWARE_INPUTS.zh-TW.md) · [日本語](README_HARDWARE_INPUTS.ja.md) · [English](README_HARDWARE_INPUTS.en.md)
+
 [应用硬件输入示例](examples/application_hardware_inputs.json)演示有限的 VDP、控制器、DMA、BUSREQ、R 观测、FM／PSG 和启动事件。各容量使用对应设备的单位。示例中的时钟与输入是显式配置值，实际会话提供适用的设备供应。
 
 [`audio_tick.py`](audio_tick.py) 的 `AudioTickSpec` 使用 `fm_ticks`、`psg_input_clocks`、`im1_grant` 和 `max_software_steps`。`im1_grant=None` 表示本次无音频中断。由应用的 `advance_audio_tick(spec)` 推进同一个声音驱动，使用其实际邮箱返回与 Timer A／B 处理点。

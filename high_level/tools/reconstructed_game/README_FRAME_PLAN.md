@@ -1,5 +1,7 @@
 # 有限整帧计划
 
+**简体中文** · [繁體中文](README_FRAME_PLAN.zh-TW.md) · [日本語](README_FRAME_PLAN.ja.md) · [English](README_FRAME_PLAN.en.md)
+
 运行配置的 `frontend` 选择 `events` 或 `frame_plan`。控制台使用 `frame_plan`；窗口支持两个配置形状。
 
 | `frame_plan` 字段 | 含义 |

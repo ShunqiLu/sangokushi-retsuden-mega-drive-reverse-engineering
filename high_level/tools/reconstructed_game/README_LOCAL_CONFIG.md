@@ -1,5 +1,7 @@
 # 生成桌面运行配置
 
+**简体中文** · [繁體中文](README_LOCAL_CONFIG.zh-TW.md) · [日本語](README_LOCAL_CONFIG.ja.md) · [English](README_LOCAL_CONFIG.en.md)
+
 [`local_config.py`](local_config.py) 将明确的本地输入写成 `g5510-reconstructed-game-config-v2`。本地运行目录包含本版源码、`scene-sources.json`、`resources/`、`assets/` 和 `build/`；Scene 清单的单一素材根为 `.`。
 
 本地运行目录可由[源码准备工具](../high_level_rom/README_GAME_SOURCE_STAGE.md)生成。配置输入包括本版的 M68K 和 Z80 构建输出、用外置 YMFM 源码和[音频桥构建工具](../high_level_audio_engine/README_YMFM.md)生成的芯片库、完整硬件 JSON，以及调用方配置的按键、时序、PCM 和存档。两种 CPU 可使用同一次本版[完整构建](../high_level_rom/README_BUILD.md)的目录。`runtime.high-level.example.json` 展示字段结构；实际运行配置提供与本次会话一致的硬件事件。

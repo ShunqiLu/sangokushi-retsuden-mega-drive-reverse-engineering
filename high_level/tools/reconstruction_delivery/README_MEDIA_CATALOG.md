@@ -1,5 +1,7 @@
 # 生成素材编辑索引
 
+**简体中文** · [繁體中文](README_MEDIA_CATALOG.zh-TW.md) · [日本語](README_MEDIA_CATALOG.ja.md) · [English](README_MEDIA_CATALOG.en.md)
+
 [`catalog_from_manifest(manifest)`](media_catalog.py) 接受 `g5510-build-connected-media-publication-v1` 资源清单，返回 JSON 索引对象与 Markdown 指南。索引按资源和文件组织，保留外置成员的编解码器、尺寸、位顺序、资源角色及字段路径。
 
 ```powershell

@@ -1,5 +1,7 @@
 # AI 命令阈值
 
+**简体中文** · [繁體中文](README_AI_POLICY_SOURCES.zh-TW.md) · [日本語](README_AI_POLICY_SOURCES.ja.md) · [English](README_AI_POLICY_SOURCES.en.md)
+
 资源 `ai_threshold_pair_fields` 包含三组各 15 对主表阈值与 3 对次表阈值，共 48 对无符号 WORD。每对使用 `first_cutoff_word` 和 `second_cutoff_word`。主表首 WORD 还供城防目标规划使用，因此编辑该值会影响这两个调用。
 
 业务逻辑以原顺序读取两张表，按无符号比较选择原分支。组号与对号表示表中的物理位置。相等、逆序和完整的 0–65535 值均属于有效源数据。

@@ -1,5 +1,7 @@
 # 冷复位与暖复位
 
+**简体中文** · [繁體中文](README_ORDERED_COLD_PLAN.zh-TW.md) · [日本語](README_ORDERED_COLD_PLAN.ja.md) · [English](README_ORDERED_COLD_PLAN.en.md)
+
 有序复位格式 `g5510-original-ordered-restart-plans-v2` 包含 `format` 和 `plans`。每项选择 `kind`（`intro` 或 `narrative`）与 `reset_path`（`warm` 或 `cold`）。实际游戏分支决定复位路径；配置声明该路径所用的有限供应。
 
 | 字段 | 值 |

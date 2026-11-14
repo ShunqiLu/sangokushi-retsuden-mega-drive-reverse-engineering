@@ -1,5 +1,7 @@
 # 头像索引生成器
 
+**简体中文** · [繁體中文](README_PORTRAIT_CATALOG.zh-TW.md) · [日本語](README_PORTRAIT_CATALOG.ja.md) · [English](README_PORTRAIT_CATALOG.en.md)
+
 [`portrait_catalog.py`](portrait_catalog.py) 将可读武将姓名、剧本记录、头像布局、调色板与共享图块连成查找索引。输出中的 `officers` 支持姓名和记录 ID 查找，`shared_tiles` 指出共同使用的图像成员。记录与画面之间的已知连线及待定身份各用原状态表示。
 
 ```powershell

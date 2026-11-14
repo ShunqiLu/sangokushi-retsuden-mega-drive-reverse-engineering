@@ -1,5 +1,7 @@
 # 生成武将头像索引
 
+**简体中文** · [繁體中文](README_PORTRAIT_CATALOG.zh-TW.md) · [日本語](README_PORTRAIT_CATALOG.ja.md) · [English](README_PORTRAIT_CATALOG.en.md)
+
 工具将武将姓名、剧本记录及头像选择数据连接为索引。每项给出记录 ID、布局、共享图块和调色板引用。编辑时沿索引找到本地素材中的实际文件。
 
 `$resources` 是同时包含 `resources/` 和 `assets/` 的本地素材根。命令从汇编版根目录运行。

@@ -1,5 +1,7 @@
 # 具名音频序列命令
 
+**简体中文** · [繁體中文](README_AUDIO_SEQUENCE_SOURCES.zh-TW.md) · [日本語](README_AUDIO_SEQUENCE_SOURCES.ja.md) · [English](README_AUDIO_SEQUENCE_SOURCES.en.md)
+
 `audio_sequence_sources.py` 在原定宽声音事件上提供具名参数。完整音频文档格式为 `g5510-named-audio-sequence-commands-v1`，视图成员格式为 `g5510-named-stateful-sequence-views-v1`。物理事件与视图的共享关系及读取顺序由原登记源提供。
 
 | 参数类别 | 原始表示 |

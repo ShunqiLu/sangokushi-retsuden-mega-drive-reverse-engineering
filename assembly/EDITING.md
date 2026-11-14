@@ -1,5 +1,7 @@
 # 编辑游戏内容
 
+**简体中文** · [繁體中文](EDITING.zh-TW.md) · [日本語](EDITING.ja.md) · [English](EDITING.en.md)
+
 程序和工具路径从本目录算起，素材路径从构建参数 `--resource-root` 所选目录算起。建议在本地副本编辑，随后从源码重新构建。
 
 | 内容 | 编辑入口 |

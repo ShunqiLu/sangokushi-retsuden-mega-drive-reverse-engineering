@@ -1,5 +1,7 @@
 # SRAM 与存档工具
 
+**简体中文** · [繁體中文](README.zh-TW.md) · [日本語](README.ja.md) · [English](README.en.md)
+
 本目录提供对逻辑 SRAM 的查看、解包、编辑与回写。G-5510 的存储区使用奇地址 `0x200001–0x203FFF`，逻辑介质为 8192 字节；工具也识别逐字节重复为两份的 16 KiB MAME 容器。
 
 ```powershell

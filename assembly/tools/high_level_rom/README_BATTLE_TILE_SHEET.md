@@ -1,5 +1,7 @@
 # 战斗背景图块表
 
+**简体中文** · [繁體中文](README_BATTLE_TILE_SHEET.zh-TW.md) · [日本語](README_BATTLE_TILE_SHEET.ja.md) · [English](README_BATTLE_TILE_SHEET.en.md)
+
 图块表为 128×128 索引 PNG，包含 16×16 个 8×8 图块。`tiles_0` 到 `tiles_4` 对应五套图块。像素编号使用图块表的 16 项索引，画面的实际配色来自游戏调色板。图块位置和翻转由[地图布局](README_BATTLE_MAP_LAYOUT.md)编辑。
 
 `$resources` 是同时包含 `resources/` 和 `assets/` 的本地素材根。命令从汇编版根目录运行。 把结果存到素材根以外的新目录。

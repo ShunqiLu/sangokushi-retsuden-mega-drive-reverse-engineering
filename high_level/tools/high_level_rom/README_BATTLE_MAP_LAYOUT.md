@@ -1,5 +1,7 @@
 # 战斗背景布局
 
+**简体中文** · [繁體中文](README_BATTLE_MAP_LAYOUT.zh-TW.md) · [日本語](README_BATTLE_MAP_LAYOUT.ja.md) · [English](README_BATTLE_MAP_LAYOUT.en.md)
+
 [`battle_map_layout.py`](battle_map_layout.py) 导出 32×32 的背景格。每格包含 `tile`、`palette_line`、`flip_x`、`flip_y` 和 `priority`；像素来自[对应的图块 PNG](README_BATTLE_TILE_SHEET.md)。
 
 ```powershell

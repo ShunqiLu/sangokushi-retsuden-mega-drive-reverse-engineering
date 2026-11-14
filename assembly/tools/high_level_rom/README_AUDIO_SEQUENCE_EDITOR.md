@@ -1,5 +1,7 @@
 # 编辑共享乐谱事件
 
+**简体中文** · [繁體中文](README_AUDIO_SEQUENCE_EDITOR.zh-TW.md) · [日本語](README_AUDIO_SEQUENCE_EDITOR.ja.md) · [English](README_AUDIO_SEQUENCE_EDITOR.en.md)
+
 共享乐谱事件保存在本地运行副本的 `assets/audio/shared/stateful_event_views.json`。一项编辑提供视图 `view_id`、字段 `field`、原值 `expected` 和新值 `value`；[编辑示例](examples/audio_sequence_field_edits.example.json)展示文档结构。
 
 请从具备源码和本地素材的副本根目录执行：

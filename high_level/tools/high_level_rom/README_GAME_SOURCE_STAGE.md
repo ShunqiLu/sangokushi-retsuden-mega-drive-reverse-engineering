@@ -1,5 +1,7 @@
 # 准备本地运行目录
 
+**简体中文** · [繁體中文](README_GAME_SOURCE_STAGE.zh-TW.md) · [日本語](README_GAME_SOURCE_STAGE.ja.md) · [English](README_GAME_SOURCE_STAGE.en.md)
+
 [`stage_sources.py`](stage_sources.py) 读取显式源码目录及登记资源，生成独立运行目录中的源码、配置模板、素材和 Scene 清单。输入为完整本地素材根，或完整的多根 Scene 清单及素材元数据清单。
 
 ```powershell

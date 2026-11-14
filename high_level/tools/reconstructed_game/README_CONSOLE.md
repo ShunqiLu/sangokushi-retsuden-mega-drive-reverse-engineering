@@ -1,5 +1,7 @@
 # 交互式控制台
 
+**简体中文** · [繁體中文](README_CONSOLE.zh-TW.md) · [日本語](README_CONSOLE.ja.md) · [English](README_CONSOLE.en.md)
+
 控制台使用相同的桌面游戏应用。配置提供完整 `frontend.frame_plan`，以 `--frontend console` 启用。
 
 ```powershell

@@ -1,5 +1,7 @@
 # Windows 扬声器输出
 
+**简体中文** · [繁體中文](README_SPEAKERS.zh-TW.md) · [日本語](README_SPEAKERS.ja.md) · [English](README_SPEAKERS.en.md)
+
 运行配置的 `pcm_output.mode` 可选择 `speakers`，由 WinMM 播放实际的 FM 与 PSG 输出。芯片的采样率和游戏时钟仍由游戏配置决定。
 
 ```json

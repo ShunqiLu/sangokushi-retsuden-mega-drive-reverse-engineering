@@ -1,5 +1,7 @@
 # 共享素材与别名
 
+**简体中文** · [繁體中文](README_MEDIA_ALIASES.zh-TW.md) · [日本語](README_MEDIA_ALIASES.ja.md) · [English](README_MEDIA_ALIASES.en.md)
+
 `media_alias_sources.py` 和 `media_layout_sources.py` 表示共用图块、界面布局及声音成员。每个别名保留原记录与共享目标，依赖同一组 PNG、布局 JSON 或事件 JSON。编辑共享成员会同时作用于引用该成员的记录。
 
 ```powershell

@@ -1,5 +1,7 @@
 # 逆向工具
 
+**简体中文** · [繁體中文](README.zh-TW.md) · [日本語](README.ja.md) · [English](README.en.md)
+
 这里提供 Mega Drive 游戏《三國志列傳 亂世群英》的 ROM 转换、反汇编、存档和资源工具。输入使用自己的卡带镜像、存档或跟踪记录。命令从本目录运行，示例使用 `input/` 和 `out/`。
 
 Python 3.10 或更新版本即可运行基础工具。68000 反汇编使用 Capstone；原始瓦片预览使用 Pillow。

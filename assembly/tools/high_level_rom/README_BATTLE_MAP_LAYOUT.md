@@ -1,5 +1,7 @@
 # 战斗背景布局
 
+**简体中文** · [繁體中文](README_BATTLE_MAP_LAYOUT.zh-TW.md) · [日本語](README_BATTLE_MAP_LAYOUT.ja.md) · [English](README_BATTLE_MAP_LAYOUT.en.md)
+
 地图包含 32×32 个格子。每格记录图块、调色板行、横向翻转、纵向翻转和优先位。A 表和 B 表分别选取同一背景的左半和右半。图块像素可用[图块表编辑器](README_BATTLE_TILE_SHEET.md)修改。
 
 `$resources` 是同时包含 `resources/` 和 `assets/` 的本地素材根。命令从汇编版根目录运行。 把结果存到素材根以外的新目录。

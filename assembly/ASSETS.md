@@ -1,5 +1,7 @@
 # 兼容素材包
 
+**简体中文** · [繁體中文](ASSETS.zh-TW.md) · [日本語](ASSETS.ja.md) · [English](ASSETS.en.md)
+
 素材包以 `resources/` 和 `assets/` 为两条入口。前者登记资源格式和成员关系；后者保存实际图块、布局、音色、声道事件和其他数据。把这两个目录的共同父目录传给构建参数 `--resource-root`。
 
 ```text

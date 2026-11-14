@@ -1,5 +1,7 @@
 # 当前存档的固定字段
 
+**简体中文** · [繁體中文](README_NAMED_CAMPAIGN.zh-TW.md) · [日本語](README_NAMED_CAMPAIGN.ja.md) · [English](README_NAMED_CAMPAIGN.en.md)
+
 [`named_campaign.py`](named_campaign.py) 将当前存档的 49 个固定段组织为城市、势力和武将记录。视图格式为 `g5510-named-campaign-v1`；各组用零起 `record_index` 定位原存储槽。其余段按 ID 保存在 `remaining_segments`，布局和位宽由 `storage` 提供。
 
 | 分组 | 可编辑字段 |

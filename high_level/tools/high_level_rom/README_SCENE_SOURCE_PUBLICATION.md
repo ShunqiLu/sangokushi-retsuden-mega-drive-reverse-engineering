@@ -1,5 +1,7 @@
 # 场景资源清单
 
+**简体中文** · [繁體中文](README_SCENE_SOURCE_PUBLICATION.zh-TW.md) · [日本語](README_SCENE_SOURCE_PUBLICATION.ja.md) · [English](README_SCENE_SOURCE_PUBLICATION.en.md)
+
 Scene 清单采用 `g5510-explicit-scene-source-roots-v1`。每个 `roots` 项含 `path` 和 `ids`；`path` 根据清单的位置解析，`ids` 给出该根拥有的登记资源。完整运行输入中的每个资源 ID 有一个对应来源。
 
 [`scene_manifest.py`](scene_manifest.py) 将一组明确的资源 ID 从完整清单转给调用者选择的素材根。其余资源沿用原清单的登记。

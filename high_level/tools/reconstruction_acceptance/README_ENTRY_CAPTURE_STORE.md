@@ -1,5 +1,7 @@
 # 入口采集文件存储
 
+**简体中文** · [繁體中文](README_ENTRY_CAPTURE_STORE.zh-TW.md) · [日本語](README_ENTRY_CAPTURE_STORE.ja.md) · [English](README_ENTRY_CAPTURE_STORE.en.md)
+
 [`EntryCaptureStore`](entry_capture_store.py) 在显式的新输出目录保存入口初态。构造参数给出记录数、总字节、单项元数据与保留空间上限。记录路径使用唯一名称。
 
 | 方法 | 保存内容 |

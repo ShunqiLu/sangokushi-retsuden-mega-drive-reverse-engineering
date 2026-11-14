@@ -1,5 +1,7 @@
 # AI 候选资格表
 
+**简体中文** · [繁體中文](README_AI_SELECTION_SOURCES.zh-TW.md) · [日本語](README_AI_SELECTION_SOURCES.ja.md) · [English](README_AI_SELECTION_SOURCES.en.md)
+
 `ai_selection_fields` 有 14 行、每行 14 个候选 BYTE。选拔业务读取 `first_gate_byte`，值 0 和 1 通过这道门槛；随后由关系位、势力代表项和城市数继续决定。0 与 1 保持为不同原值，2–255 保持各自的 BYTE 值。物理行以原记录 ID 标识。
 
 具名素材可直接提供给 `edit`；下列导出从含 typed 源的素材根 `$typedResources` 生成具名文档。输出写入已有 `build/` 下的新文件。

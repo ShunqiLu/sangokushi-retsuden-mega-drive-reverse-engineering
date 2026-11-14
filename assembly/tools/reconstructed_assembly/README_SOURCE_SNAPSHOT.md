@@ -1,5 +1,7 @@
 # 汇编源码快照
 
+**简体中文** · [繁體中文](README_SOURCE_SNAPSHOT.zh-TW.md) · [日本語](README_SOURCE_SNAPSHOT.ja.md) · [English](README_SOURCE_SNAPSHOT.en.md)
+
 `stage_sources.snapshot_assembly_tree(project_root, resource_snapshot=...)` 返回汇编源码、布局、资源编码器和明确传入的资源文件集合。调用方负责保存返回的元数据及字节映射。
 
 从汇编版根目录检查源码清单与本地素材结构：

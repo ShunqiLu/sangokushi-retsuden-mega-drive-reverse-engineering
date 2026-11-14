@@ -1,5 +1,7 @@
 # 当前行军队伍
 
+**简体中文** · [繁體中文](README_CAMPAIGN_PACKETS.zh-TW.md) · [日本語](README_CAMPAIGN_PACKETS.ja.md) · [English](README_CAMPAIGN_PACKETS.en.md)
+
 [`campaign_packets.py`](campaign_packets.py) 将逻辑存档的 RAM9000 可变记录表示为坐标、势力、携带资源与武将名单。当前视图格式为 `g5510-campaign-packets-v2`。
 
 | 字段 | 保存宽度与用途 |

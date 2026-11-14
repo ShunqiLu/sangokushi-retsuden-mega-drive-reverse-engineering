@@ -1,5 +1,7 @@
 # 原版兼容行为
 
+**简体中文** · [繁體中文](ORIGINAL_GAME_BUGS.zh-TW.md) · [日本語](ORIGINAL_GAME_BUGS.ja.md) · [English](ORIGINAL_GAME_BUGS.en.md)
+
 下表记录卡带游戏中可区分的行为与边界。复原逻辑沿用这些行为，包括计数回绕、表项残值、指针覆盖和部分写入。编号用于定位同一现象。
 
 | 编号 | 原版行为 |

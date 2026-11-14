@@ -1,5 +1,7 @@
 # 桌面游戏应用
 
+**简体中文** · [繁體中文](README.zh-TW.md) · [日本語](README.ja.md) · [English](README.en.md)
+
 [`tools.reconstructed_game`](__main__.py) 使用同一游戏应用推进场景、输入、画面、音频和存档。图形窗口以 Tk 展示实际画面；控制台通过 JSON 行协议提供同一个可续接会话。
 
 ## 运行

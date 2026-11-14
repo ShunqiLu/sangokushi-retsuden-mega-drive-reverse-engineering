@@ -1,5 +1,7 @@
 # 标题图块
 
+**简体中文** · [繁體中文](README_TITLE_TILE_MEDIA.zh-TW.md) · [日本語](README_TITLE_TILE_MEDIA.ja.md) · [English](README_TITLE_TILE_MEDIA.en.md)
+
 标题画面的五条 4bpp 压缩流分别提供 256 个 8×8 图块和 4096 个解码 WORD。
 
 | 资源 | 线性压缩范围（半开区间） | VDP 起址 |

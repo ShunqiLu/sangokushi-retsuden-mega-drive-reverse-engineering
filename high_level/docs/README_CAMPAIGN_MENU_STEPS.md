@@ -1,5 +1,7 @@
 # 新局菜单与游戏初始化
 
+**简体中文** · [繁體中文](README_CAMPAIGN_MENU_STEPS.zh-TW.md) · [日本語](README_CAMPAIGN_MENU_STEPS.ja.md) · [English](README_CAMPAIGN_MENU_STEPS.en.md)
+
 [`CampaignMenuScenePrograms`](../tools/high_level_gameplay_flow/campaign_menu_steps.py) 负责主流程的 `0x0004B0` 入口。它使用当前 Scene，沿用父流程的 `0x0003CE` 返回地址，并将控制器设置、设备等待和剧本初始化接成一个合作式调用。
 
 | 调用入口／返回位置 | 职责 |

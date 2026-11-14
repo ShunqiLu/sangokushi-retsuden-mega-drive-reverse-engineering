@@ -1,5 +1,7 @@
 # 编辑游戏内容
 
+**简体中文** · [繁體中文](EDITING.zh-TW.md) · [日本語](EDITING.ja.md) · [English](EDITING.en.md)
+
 游戏规则位于本源码目录。图像、声音和剧本数据位于通过 `--resource-root` 选择的[素材根](ASSETS.md)。
 
 | 内容 | 编辑入口 |

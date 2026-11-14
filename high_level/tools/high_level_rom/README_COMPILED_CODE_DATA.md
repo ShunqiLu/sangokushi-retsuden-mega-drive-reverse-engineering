@@ -1,5 +1,7 @@
 # M68K 程序数据
 
+**简体中文** · [繁體中文](README_COMPILED_CODE_DATA.zh-TW.md) · [日本語](README_COMPILED_CODE_DATA.ja.md) · [English](README_COMPILED_CODE_DATA.en.md)
+
 原游戏的程序复制及校验逻辑使用当前卡带构建生成的指令数据。[`compiled_code_data.py`](compiled_code_data.py) 提供从本版源码构建读取这些数据的接口：
 
 ```python

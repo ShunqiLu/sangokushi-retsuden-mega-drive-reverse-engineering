@@ -1,5 +1,7 @@
 # AI 命令阈值
 
+**简体中文** · [繁體中文](README_AI_POLICY_SOURCES.zh-TW.md) · [日本語](README_AI_POLICY_SOURCES.ja.md) · [English](README_AI_POLICY_SOURCES.en.md)
+
 `resources/data/ai_threshold_pair_fields.json` 保存 48 对 16 位阈值。具名视图按命令分组，暴露每对阈值；与防御判断共用的第一项仍来自同一字段。
 
 `$resources` 是同时包含 `resources/` 和 `assets/` 的本地素材根。命令从汇编版根目录运行。

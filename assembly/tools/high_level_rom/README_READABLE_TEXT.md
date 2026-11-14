@@ -1,5 +1,7 @@
 # 编辑对话和姓名
 
+**简体中文** · [繁體中文](README_READABLE_TEXT.zh-TW.md) · [日本語](README_READABLE_TEXT.ja.md) · [English](README_READABLE_TEXT.en.md)
+
 `resources/data/dialogue_text.json` 记录对话、武将名和城名。具名格式保留终止控制字、原字数和无法用普通字符区分时的精确转义。编辑应使用同样的记录 ID 及字数上限。
 
 `$resources` 是同时包含 `resources/` 和 `assets/` 的本地素材根。命令从汇编版根目录运行。

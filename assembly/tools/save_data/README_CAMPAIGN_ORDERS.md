@@ -1,5 +1,7 @@
 # 编辑存档中的运输指令
 
+**简体中文** · [繁體中文](README_CAMPAIGN_ORDERS.zh-TW.md) · [日本語](README_CAMPAIGN_ORDERS.ja.md) · [English](README_CAMPAIGN_ORDERS.en.md)
+
 运输视图对应 CE00 中的 40 个保存槽。它记录类型、路线坐标和目标城市等编码值；导入保留空槽和其他存档段。
 
 从汇编版根目录执行。使用 8 KiB 的本地逻辑存档作为起点，并为结果准备 `build/`。

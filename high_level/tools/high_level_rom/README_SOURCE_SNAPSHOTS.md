@@ -1,5 +1,7 @@
 # 源码与资源快照
 
+**简体中文** · [繁體中文](README_SOURCE_SNAPSHOTS.zh-TW.md) · [日本語](README_SOURCE_SNAPSHOTS.ja.md) · [English](README_SOURCE_SNAPSHOTS.en.md)
+
 [`stage_sources.py`](stage_sources.py) 提供两种在内存中组织构建输入的接口：
 
 - `snapshot_resources(resource_root, resource_registration, ...)` 根据资源登记读取元数据和文件内容，使用相对路径索引每份字节快照，并支持多根清单。

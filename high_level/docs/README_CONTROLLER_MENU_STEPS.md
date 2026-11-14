@@ -1,5 +1,7 @@
 # 控制器设置的设备等待
 
+**简体中文** · [繁體中文](README_CONTROLLER_MENU_STEPS.zh-TW.md) · [日本語](README_CONTROLLER_MENU_STEPS.ja.md) · [English](README_CONTROLLER_MENU_STEPS.en.md)
+
 [`ControllerMenuPrograms(provider)`](../tools/high_level_gameplay_flow/controller_menu_steps.py) 与父流程共享一个 `BattleScenePrograms` 提供器。`yield from child.program(state, frame)` 推进 `0x0305B0` 控制器设置和 `0x02AACE` 新局菜单。父流程持有原 `0x0305B0 / 0x0528` 返回槽。
 
 | 等待类型 | 事件 |

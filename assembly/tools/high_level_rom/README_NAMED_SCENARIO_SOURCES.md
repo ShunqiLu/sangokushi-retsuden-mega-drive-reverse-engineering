@@ -1,5 +1,7 @@
 # 编辑剧本初值
 
+**简体中文** · [繁體中文](README_NAMED_SCENARIO_SOURCES.zh-TW.md) · [日本語](README_NAMED_SCENARIO_SOURCES.ja.md) · [English](README_NAMED_SCENARIO_SOURCES.en.md)
+
 `resources/data/scenario_build.json` 保存三套剧本的城市、势力、武将及初始装备。具名视图提供资金、粮食、兵力、能力、归属和坐标等字段，地址键保留其原有范围和宽度。当前进度见[存档编辑](../save_data/README.md)。
 
 `$resources` 是同时包含 `resources/` 和 `assets/` 的本地素材根。命令从汇编版根目录运行。

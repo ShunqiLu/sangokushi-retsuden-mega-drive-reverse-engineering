@@ -1,5 +1,7 @@
 # 镜像与反汇编
 
+**简体中文** · [繁體中文](cartridge-and-code.zh-TW.md) · [日本語](cartridge-and-code.ja.md) · [English](cartridge-and-code.en.md)
+
 SMD 包含 512 字节复制器头和以 16 KiB 为单位的交织数据。线性 BIN 使用 68000 的字节顺序。下列 68000 地址对应线性 BIN。
 
 ```sh

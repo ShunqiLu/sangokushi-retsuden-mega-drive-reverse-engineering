@@ -1,5 +1,7 @@
 # AI 候选资格
 
+**简体中文** · [繁體中文](README_AI_SELECTION_SOURCES.zh-TW.md) · [日本語](README_AI_SELECTION_SOURCES.ja.md) · [English](README_AI_SELECTION_SOURCES.en.md)
+
 `resources/data/ai_selection_fields.json` 提供 14×14 个 8 位参数，供决策的首道候选条件使用。具名视图分别保存分组、位置和原字节值。
 
 `$resources` 是同时包含 `resources/` 和 `assets/` 的本地素材根。命令从汇编版根目录运行。

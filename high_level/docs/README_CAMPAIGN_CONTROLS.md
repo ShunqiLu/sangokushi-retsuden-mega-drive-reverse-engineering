@@ -1,5 +1,7 @@
 # 新局设置页操作
 
+**简体中文** · [繁體中文](README_CAMPAIGN_CONTROLS.zh-TW.md) · [日本語](README_CAMPAIGN_CONTROLS.ja.md) · [English](README_CAMPAIGN_CONTROLS.en.md)
+
 实体手柄按键按新按下边沿识别。宿主的键盘对应关系由运行配置定义。
 
 | 按键 | 新局设置 |

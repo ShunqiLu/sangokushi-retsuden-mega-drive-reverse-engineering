@@ -1,5 +1,7 @@
 # 有序片头与剧情复位
 
+**简体中文** · [繁體中文](README_ORDERED_RESTARTS.zh-TW.md) · [日本語](README_ORDERED_RESTARTS.ja.md) · [English](README_ORDERED_RESTARTS.en.md)
+
 前端通过 `--restarts` 提供一个有序的片头及剧情复位计划。应用依照实际的片头 IRQ 跳转和剧情跳转消费 `plans`，保持同一存档介质、场景和设备所有权。
 
 ```powershell

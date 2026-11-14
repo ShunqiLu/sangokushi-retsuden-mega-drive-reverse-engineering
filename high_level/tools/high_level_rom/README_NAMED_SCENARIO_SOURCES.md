@@ -1,5 +1,7 @@
 # 具名剧本初值
 
+**简体中文** · [繁體中文](README_NAMED_SCENARIO_SOURCES.zh-TW.md) · [日本語](README_NAMED_SCENARIO_SOURCES.ja.md) · [English](README_NAMED_SCENARIO_SOURCES.en.md)
+
 [`scenario_sources.py`](scenario_sources.py) 将城市、武将、势力的 typed 剧本列映射到 `g5510-owned-named-scenario-source-v1`。文档保留 `metadata`、`directory_targets` 和三个物理 `scenarios`。物理记录用 `scenario_0`、`scenario_1`、`scenario_2` 标识；运行时描述符及目录别名保留各自的引用。
 
 | 分组 | 字段与物理值 |

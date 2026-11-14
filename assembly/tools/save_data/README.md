@@ -1,5 +1,7 @@
 # 存档工具
 
+**简体中文** · [繁體中文](README.zh-TW.md) · [日本語](README.ja.md) · [English](README.en.md)
+
 `save_format` 识别存档封装、验证校验信息并读写资源段。`campaign_cli` 提供当前进度的具名编辑。原始存档作为输入保存，新存档采用独立路径。
 
 ```powershell

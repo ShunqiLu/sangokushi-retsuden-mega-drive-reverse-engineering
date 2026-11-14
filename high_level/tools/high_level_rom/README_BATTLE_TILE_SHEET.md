@@ -1,5 +1,7 @@
 # 战斗背景图块表
 
+**简体中文** · [繁體中文](README_BATTLE_TILE_SHEET.zh-TW.md) · [日本語](README_BATTLE_TILE_SHEET.ja.md) · [English](README_BATTLE_TILE_SHEET.en.md)
+
 [`battle_tile_sheet.py`](battle_tile_sheet.py) 为 `tiles_0` 到 `tiles_4` 中选定的图块组生成 128×128 索引 PNG。16×16 个图块按 VRAM 上传顺序排列，每块为 8×8。显示灰度代表索引；游戏颜色来自实际调色板。[布局编辑器](README_BATTLE_MAP_LAYOUT.md)负责格位置、翻转和调色板行。
 
 ```powershell

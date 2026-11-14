@@ -1,5 +1,7 @@
 # 生成 Z80 音频程序数据
 
+**简体中文** · [繁體中文](README_PORTABLE_BUILD.zh-TW.md) · [日本語](README_PORTABLE_BUILD.ja.md) · [English](README_PORTABLE_BUILD.en.md)
+
 [`tools.high_level_audio_engine.build`](build.py) 使用本版本 Python 音频驱动和显式选择的 GNU Z80 COFF 工具。选择已存在的构建根和该根下新的输出目录。完整卡带构建的 `audio_startup`、`audio_driver` 产物也可供桌面运行使用。
 
 ```powershell

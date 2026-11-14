@@ -1,5 +1,7 @@
 # Python 构建器
 
+**简体中文** · [繁體中文](README_BUILD.zh-TW.md) · [日本語](README_BUILD.ja.md) · [English](README_BUILD.en.md)
+
 从 [Python 版首页](../../README.md) 配置运行环境。在源码根调用 `tools.high_level_rom.build`，以兼容素材根、工具目录及新输出路径作为显式输入。
 
 | 参数 | 用途 |

@@ -1,5 +1,7 @@
 # 战斗入口与结果续接
 
+**简体中文** · [繁體中文](README_BATTLE_ENTRY_STEPS.zh-TW.md) · [日本語](README_BATTLE_ENTRY_STEPS.ja.md) · [English](README_BATTLE_ENTRY_STEPS.en.md)
+
 [`battle_entry_steps.py`](../tools/high_level_gameplay_flow/battle_entry_steps.py) 提供同一战斗现场的完整调用。构造 `BattleEntrySession(state, frame, entry=...)` 时传入实际场景、完整寄存器帧、物理栈和 SR。
 
 | `entry` | 卡带入口 | 调用职责 |

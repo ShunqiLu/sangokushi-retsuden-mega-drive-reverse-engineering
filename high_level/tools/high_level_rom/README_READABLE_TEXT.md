@@ -1,5 +1,7 @@
 # 中文对话、武将名与城市名
 
+**简体中文** · [繁體中文](README_READABLE_TEXT.zh-TW.md) · [日本語](README_READABLE_TEXT.ja.md) · [English](README_READABLE_TEXT.en.md)
+
 [`readable_text.py`](readable_text.py) 将 typed 文本转换为 `g5510-owned-main-text-unicode-source-v1`。字符由 [低段字形表](text_sources/glyphs_lower.json) 与 [高段字形表](text_sources/glyphs_upper.json) 映射；重码、未知图形及非规范控制值用四位大写十六进制 `⟦XXXX⟧` 精确表示。
 
 对话保留原文字槽与各个控制 WORD 的位置和值，含末尾恢复控制。对话中的 `0000` 是图形操作，`4000` 对应字形 0；名称中的 `0000` 对应字形 0。武将名占 3 WORD，城市名占 2 WORD。

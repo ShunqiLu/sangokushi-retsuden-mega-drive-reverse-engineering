@@ -1,5 +1,7 @@
 # 编辑共享乐谱事件
 
+**简体中文** · [繁體中文](README_AUDIO_SEQUENCE_EDITOR.zh-TW.md) · [日本語](README_AUDIO_SEQUENCE_EDITOR.ja.md) · [English](README_AUDIO_SEQUENCE_EDITOR.en.md)
+
 此工具在本地运行目录读取 `resources/audio/audio_build.json` 和 `assets/audio/`，按当前版本的登记与编码核对编辑。编辑文件的形状见[字段示例](examples/audio_sequence_field_edits.example.json)；`view_id` 和 `expected` 来自当前 `assets/audio/shared/stateful_event_views.json`。
 
 ```powershell

@@ -1,5 +1,7 @@
 # 《三國志列傳 亂世群英》汇编源码
 
+**简体中文** · [繁體中文](README.zh-TW.md) · [日本語](README.ja.md) · [English](README.en.md)
+
 汇编版以 GNU 68000 和 Z80 助记符描述程序，通过地址布局和资源编码器生成 Mega Drive 卡带镜像。构建使用本地的兼容素材包，其中并列放置 `resources/` 和 `assets/`。
 
 ## 构建

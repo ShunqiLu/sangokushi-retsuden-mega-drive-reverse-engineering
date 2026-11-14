@@ -1,5 +1,7 @@
 # CE00 运输命令
 
+**简体中文** · [繁體中文](README_CAMPAIGN_ORDERS.zh-TW.md) · [日本語](README_CAMPAIGN_ORDERS.ja.md) · [English](README_CAMPAIGN_ORDERS.en.md)
+
 [`campaign_orders.py`](campaign_orders.py) 将当前逻辑存档中偏移 `0x1678` 的 110 字节表示为 40 条 CE00 记录，每条占 22 位。运行代码将码值用于运输种类、路径和目的资源索引。
 
 | 字段 | 宽度 | 用途 |
