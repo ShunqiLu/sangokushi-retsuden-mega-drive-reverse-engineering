@@ -1,6 +1,6 @@
 # Sangokushi Retsuden: Ransei no Eiyuutachi · Mega Drive Reverse Engineering
 
-[简体中文](README.en.md) · [繁體中文](README.zh-TW.md) · [日本語](README.ja.md) · **English**
+[简体中文](README.md) · [繁體中文](README.zh-TW.md) · [日本語](README.ja.md) · **English**
 
 **Traditional Chinese cartridge `G-5510-00`** · 三國志列傳 亂世群英
 

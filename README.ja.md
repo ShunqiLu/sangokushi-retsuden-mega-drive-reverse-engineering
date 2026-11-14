@@ -1,6 +1,6 @@
 # 三国志列伝 乱世の英雄たち · メガドライブのリバースエンジニアリング
 
-[简体中文](README.ja.md) · [繁體中文](README.zh-TW.md) · **日本語** · [English](README.en.md)
+[简体中文](README.md) · [繁體中文](README.zh-TW.md) · **日本語** · [English](README.en.md)
 
 **Sangokushi Retsuden: Ransei no Eiyuutachi** · 繁体字中国語版カートリッジ `G-5510-00`
 

@@ -1,6 +1,6 @@
 # 三國志列傳：亂世群英 · Mega Drive 逆向工程
 
-[简体中文](README.zh-TW.md) · **繁體中文** · [日本語](README.ja.md) · [English](README.en.md)
+[简体中文](README.md) · **繁體中文** · [日本語](README.ja.md) · [English](README.en.md)
 
 **Sangokushi Retsuden: Ransei no Eiyuutachi** · 繁體中文版卡匣 `G-5510-00`
 
